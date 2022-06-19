@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>如何用css实现一个三角形</title>
+      <link href="/2022/06/19/ru-he-yong-css-shi-xian-yi-ge-san-jiao-xing/"/>
+      <url>/2022/06/19/ru-he-yong-css-shi-xian-yi-ge-san-jiao-xing/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>IE=edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">        <span class="token selector">.triangle</span> <span class="token punctuation">&#123;</span>            <span class="token property">width</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>            <span class="token property">height</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>            <span class="token property">border-top</span><span class="token punctuation">:</span> 100px solid transparent<span class="token punctuation">;</span>            <span class="token property">border-right</span><span class="token punctuation">:</span> 100px solid blue<span class="token punctuation">;</span>            <span class="token property">border-bottom</span><span class="token punctuation">:</span> 100px solid transparent<span class="token punctuation">;</span>        <span class="token punctuation">&#125;</span>    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>triangle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>利用了border的属性，令width和height都等于0，就会形成四个对顶的三角形，然后去掉其中一条边，把两侧三角形颜色设置成transparent就可以得到一个完整的三角形了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+            <tag> front-end </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>git rebase 和 git merge 的区别</title>
       <link href="/2022/06/18/git-rebase-he-git-merge-de-qu-bie/"/>
       <url>/2022/06/18/git-rebase-he-git-merge-de-qu-bie/</url>
