@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-06-21T14:39:27.222Z</updated>
+  <updated>2022-06-29T07:32:52.472Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用YOLOv5训练自己的数据集</title>
+    <link href="https://yangjunyan0715.github.io/2022/06/29/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji/"/>
+    <id>https://yangjunyan0715.github.io/2022/06/29/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji/</id>
+    <published>2022-06-29T07:00:27.000Z</published>
+    <updated>2022-06-29T07:32:52.472Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天试了一下用YOLOv5在HiXray(一个安检危险物品的数据集)做目标检测，先是需要对原数据集进行处理，写了个.py文件做格式转换&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-python&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CV" scheme="https://yangjunyan0715.github.io/tags/CV/"/>
+    
+  </entry>
   
   <entry>
     <title>《指定幸存者》</title>
