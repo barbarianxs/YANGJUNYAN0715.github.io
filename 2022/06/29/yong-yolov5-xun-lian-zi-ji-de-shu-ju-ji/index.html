@@ -432,7 +432,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    364
+                    362
                 </div>
                 
 
@@ -462,8 +462,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天试了一下用YOLOv5在HiXray(一个安检危险物品的数据集)做目标检测，先是需要对原数据集进行处理，写了个.py文件做格式转换。</p>
-<p>数据集用的是HiXray，HiXray原数据集只有test和train两个类，YOLOv5的数据集输入应该包括train，test和val，我的实验数据集中的train采用了原数据集train中前2400张，val采用的是和train一样的数据集第2401-2800这400张，test采用的是原数据集test前800张。</p>
+                <p>试了一下用YOLOv5在HiXray(一个安检危险物品的数据集)做目标检测，先是需要对原数据集进行处理，写了个.py文件做格式转换。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> os
 
 <span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image
@@ -496,6 +495,9 @@ d <span class="token operator">=</span> <span class="token punctuation">&#123;</
         filename <span class="token operator">=</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>basename<span class="token punctuation">(</span>fl<span class="token punctuation">)</span>
         read_and_write<span class="token punctuation">(</span>filename<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+
+
+<p>数据集用的是HiXray，HiXray原数据集只有test和train两个类，YOLOv5的数据集输入应该包括train，test和val，我的实验数据集中的train采用了原数据集train中前2400张，val采用的是和train一样的数据集第2401-2800这400张，test采用的是原数据集test前800张。</p>
 <p>YOLO系列最大的优势就速度快，但最后实验结果好像不是很理想，有出现过拟合的问题，mAp也偏低，总的平均只有75%左右，Nonmentallic_Lighter好像很不容易识别。</p>
 <img src="/2022/06/29/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji/confusion_matrix.png" class="">
 
