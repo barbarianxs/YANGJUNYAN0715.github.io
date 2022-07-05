@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>Vue 父子组件之间数据的双向同步</title>
+      <link href="/2022/07/05/vue-fu-zi-zu-jian-zhi-jian-shu-ju-de-shuang-xiang-tong-bu/"/>
+      <url>/2022/07/05/vue-fu-zi-zu-jian-zhi-jian-shu-ju-de-shuang-xiang-tong-bu/</url>
+      
+        <content type="html"><![CDATA[<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;  &lt;div&gt;    &lt;h1&gt;App 根组件 -- &#123;&#123; count &#125;&#125;&lt;&#x2F;h1&gt;    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; @click&#x3D;&quot;count +&#x3D; 1&quot;&gt;+1&lt;&#x2F;button&gt;    &lt;hr &#x2F;&gt;    &lt;!-- 3. 以标签形式使用子组件 --&gt;    &lt;!-- &lt;my-son :num&#x3D;&quot;count&quot; @numchange&#x3D;&quot;getNum&quot;&gt;&lt;&#x2F;my-son&gt; --&gt;    &lt;my-son v-model:num&#x3D;&quot;count&quot;&gt;&lt;&#x2F;my-son&gt;  &lt;&#x2F;div&gt;&lt;&#x2F;template&gt;&lt;script&gt;&#x2F;&#x2F; 1. 导入子组件import MySon from &#39;.&#x2F;Son.vue&#39;export default &#123;  name: &#39;MyApp&#39;,  data() &#123;    return &#123;      count: 0,    &#125;  &#125;,  &#x2F;&#x2F; methods: &#123;  &#x2F;&#x2F;   getNum(num) &#123;  &#x2F;&#x2F;     this.count &#x3D; num  &#x2F;&#x2F;   &#125;  &#x2F;&#x2F; &#125;,  &#x2F;&#x2F; 2. 注册子组件  components: &#123;    MySon,  &#125;,&#125;&lt;&#x2F;script&gt;&lt;style lang&#x3D;&quot;less&quot; scoped&gt;&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;  &lt;div&gt;    &lt;h3&gt;Son 子组件 --- &#123;&#123; num &#125;&#125;&lt;&#x2F;h3&gt;    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; @click&#x3D;&quot;add&quot;&gt;+1&lt;&#x2F;button&gt;  &lt;&#x2F;div&gt;&lt;&#x2F;template&gt;&lt;script&gt;export default &#123;  name: &#39;MySon&#39;,  props: [&#39;num&#39;],  emits: [&#39;update:num&#39;],  &#x2F;&#x2F; emits: [&#39;numchange&#39;],  methods: &#123;    add() &#123;      &#x2F;&#x2F; this.$emit(&#39;numchange&#39;, this.num + 1)      this.$emit(&#39;update:num&#39;, this.num + 1)    &#125;,  &#125;,&#125;&lt;&#x2F;script&gt;&lt;style lang&#x3D;&quot;less&quot; scoped&gt;&lt;&#x2F;style&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> front-end </tag>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>北岛《回答》</title>
       <link href="/2022/07/01/bei-dao-hui-da/"/>
       <url>/2022/07/01/bei-dao-hui-da/</url>
