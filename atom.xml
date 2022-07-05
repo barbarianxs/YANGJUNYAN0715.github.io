@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-07-05T14:38:14.907Z</updated>
+  <updated>2022-07-05T14:39:29.648Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://yangjunyan0715.github.io/2022/07/05/vue-fu-zi-zu-jian-zhi-jian-shu-ju-de-shuang-xiang-tong-bu/"/>
     <id>https://yangjunyan0715.github.io/2022/07/05/vue-fu-zi-zu-jian-zhi-jian-shu-ju-de-shuang-xiang-tong-bu/</id>
     <published>2022-07-05T14:36:37.000Z</published>
-    <updated>2022-07-05T14:38:14.907Z</updated>
+    <updated>2022-07-05T14:39:29.648Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-vue&quot; data-language=&quot;vue&quot;&gt;&lt;code class=&quot;language-vue&quot;&gt;&amp;lt;template&amp;gt;
-  &amp;lt;div&amp;gt;
-    &amp;lt;h1&amp;gt;App 根组件</summary>
+    <summary type="html">&lt;pre class=&quot;line-numbers language-markup&quot; data-language=&quot;markup&quot;&gt;&lt;code class=&quot;language-markup&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token</summary>
         
       
     
