@@ -432,7 +432,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    272
+                    277
                 </div>
                 
 
@@ -463,7 +463,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>今天又尝试用YOLOv5在HiXray上做了目标检测的任务，这次和上次不同在于采用了全部数据集，上次只有很小一部分。train和val沿用了HiXray中的train部分，按照6:1比例来随机划分，test完全照搬HiXray的test。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 将原来的train部分划分成train和val,比例大概为1/6(即0.143)</span>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 将原来的train部分划分成train和val,比例大概为1:6(即比例系数为0.143)</span>
 <span class="token keyword">import</span> os
 <span class="token keyword">import</span> random
 <span class="token keyword">import</span> shutil
