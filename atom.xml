@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-07-05T14:39:29.648Z</updated>
+  <updated>2022-07-12T09:12:39.641Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用YOLOv5训练自己的数据集（2）</title>
+    <link href="https://yangjunyan0715.github.io/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/"/>
+    <id>https://yangjunyan0715.github.io/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/</id>
+    <published>2022-07-12T09:04:57.000Z</published>
+    <updated>2022-07-12T09:12:39.641Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天又尝试用YOLOv5在HiXray上做了目标检测的任务，这次和上次不同在于采用了全部数据集，上次只有很小一部分。train和val沿用了HiXray中的train部分，按照6:1比例来随机划分，test完全照搬HiXray的test。&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    
+    <category term="CV" scheme="https://yangjunyan0715.github.io/tags/CV/"/>
+    
+    <category term="object detection" scheme="https://yangjunyan0715.github.io/tags/object-detection/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue 父子组件之间数据的双向同步</title>
