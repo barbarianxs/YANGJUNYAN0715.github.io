@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="用YOLOv5训练自己的数据集（2）, barbarianxs&#39; blog">
+    <meta name="keywords" content="一段有意思的话, barbarianxs&#39; blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>用YOLOv5训练自己的数据集（2） | barbarianxs&#39; blog</title>
+    <title>一段有意思的话 | barbarianxs&#39; blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -277,12 +277,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">用YOLOv5训练自己的数据集（2）</h1>
+                    <h1 class="description center-align post-title">一段有意思的话</h1>
                 </div>
             </div>
         </div>
@@ -398,12 +398,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/CV/">
-                                <span class="chip bg-color">CV</span>
-                            </a>
-                        
-                            <a href="/tags/object-detection/">
-                                <span class="chip bg-color">object detection</span>
+                            <a href="/tags/reading-notes/">
+                                <span class="chip bg-color">reading notes</span>
                             </a>
                         
                     </div>
@@ -418,21 +414,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-12
+                    2022-07-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-13
+                    2022-07-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    317
+                    40
                 </div>
                 
 
@@ -462,39 +458,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天又尝试用YOLOv5在HiXray上做了目标检测的任务，这次和上次不同在于采用了全部数据集，上次只有很小一部分。train和val沿用了HiXray中的train部分，按照6:1比例来随机划分，test完全照搬HiXray的test。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 将原来的train部分划分成train和val,比例大概为1:6(即比例系数为0.143)</span>
-<span class="token keyword">import</span> os
-<span class="token keyword">import</span> random
-<span class="token keyword">import</span> shutil
-
-
-<span class="token keyword">def</span> <span class="token function">moveFile</span><span class="token punctuation">(</span>fileDir<span class="token punctuation">,</span> tarDir<span class="token punctuation">,</span> fileDir2<span class="token punctuation">,</span> tarDir2<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    pathDir <span class="token operator">=</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span>fileDir<span class="token punctuation">)</span>  <span class="token comment"># 取图片的原始路径</span>
-    filenumber <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>pathDir<span class="token punctuation">)</span>
-    rate <span class="token operator">=</span> <span class="token number">0.143</span>  <span class="token comment"># 自定义抽取图片的比例，比方说100张抽10张，那就是0.1</span>
-    picknumber <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>filenumber <span class="token operator">*</span> rate<span class="token punctuation">)</span>  <span class="token comment"># 按照rate比例从文件夹中取一定数量图片</span>
-    sample <span class="token operator">=</span> random<span class="token punctuation">.</span>sample<span class="token punctuation">(</span>pathDir<span class="token punctuation">,</span> picknumber<span class="token punctuation">)</span>  <span class="token comment"># 随机选取picknumber数量的样本图片</span>
-    <span class="token comment"># print(sample)</span>
-    <span class="token keyword">for</span> name <span class="token keyword">in</span> sample<span class="token punctuation">:</span>
-        shutil<span class="token punctuation">.</span>move<span class="token punctuation">(</span>fileDir <span class="token operator">+</span> name<span class="token punctuation">,</span> tarDir <span class="token operator">+</span> <span class="token string">"\\"</span> <span class="token operator">+</span> name<span class="token punctuation">)</span>
-        shutil<span class="token punctuation">.</span>move<span class="token punctuation">(</span>fileDir2 <span class="token operator">+</span> name<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">".txt"</span><span class="token punctuation">,</span> tarDir2 <span class="token operator">+</span> <span class="token string">"\\"</span> <span class="token operator">+</span> name<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">".txt"</span><span class="token punctuation">)</span>
-    <span class="token keyword">return</span>
-
-
-<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
-    fileDir <span class="token operator">=</span> <span class="token string">r"E:\Deep_learning\Dataset\HiXray\train\train_image"</span> <span class="token operator">+</span> <span class="token string">"\\"</span>  <span class="token comment"># 源图片文件夹路径</span>
-    tarDir <span class="token operator">=</span> <span class="token string">r'E:\Deep_learning\Dataset\HiXray\val\val_image'</span>  <span class="token comment"># 移动到新的文件夹路径</span>
-    fileDir2 <span class="token operator">=</span> <span class="token string">r"E:\Deep_learning\Dataset\HiXray\train\train_annotation_for_yolov5"</span> <span class="token operator">+</span> <span class="token string">"\\"</span>  <span class="token comment"># 对应的txt文件也要移动</span>
-    tarDir2 <span class="token operator">=</span> <span class="token string">r"E:\Deep_learning\Dataset\HiXray\val\val_annotation_for_yolov5"</span>
-    moveFile<span class="token punctuation">(</span>fileDir<span class="token punctuation">,</span> tarDir<span class="token punctuation">,</span> fileDir2<span class="token punctuation">,</span> tarDir2<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>和之前一样，也出现了过拟合的问题，有朋友说类似这样的大数据集可能都会出现过拟合的现象。</p>
-<img src="/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/confusion_matrix.png" class="">
-
-<img src="/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/results.png" class="">
-
-<img src="/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/data.jpg" class="">
+                <p>看到一段很有意思的话。</p>
+<p>用时间换知识，</p>
+<p>用知识换经验，</p>
+<p>用经验换资历，</p>
+<p>用资历换资源，</p>
+<p>用资源换名声。</p>
 
                 
             </div>
@@ -521,7 +490,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yangjunyan0715.github.io/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/">https://yangjunyan0715.github.io/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/</a>
+                    <a href="https://yangjunyan0715.github.io/2022/07/15/yi-duan-you-yi-si-de-hua/">https://yangjunyan0715.github.io/2022/07/15/yi-duan-you-yi-si-de-hua/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -559,12 +528,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/CV/">
-                                    <span class="chip bg-color">CV</span>
-                                </a>
-                            
-                                <a href="/tags/object-detection/">
-                                    <span class="chip bg-color">object detection</span>
+                                <a href="/tags/reading-notes/">
+                                    <span class="chip bg-color">reading notes</span>
                                 </a>
                             
                         </div>
@@ -997,9 +962,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/07/15/yi-duan-you-yi-si-de-hua/">
                     <div class="card-image">
@@ -1017,9 +983,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-07-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1028,6 +994,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1046,13 +1013,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/05/vue-fu-zi-zu-jian-zhi-jian-shu-ju-de-shuang-xiang-tong-bu/">
+                <a href="/2022/07/12/yong-yolov5-xun-lian-zi-ji-de-shu-ju-ji-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Vue 父子组件之间数据的双向同步">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="用YOLOv5训练自己的数据集（2）">
                         
-                        <span class="card-title">Vue 父子组件之间数据的双向同步</span>
+                        <span class="card-title">用YOLOv5训练自己的数据集（2）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1063,7 +1030,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-12
                             </span>
                         <span class="publish-author">
                             
@@ -1076,12 +1043,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/front-end/">
-                        <span class="chip bg-color">front-end</span>
+                    <a href="/tags/CV/">
+                        <span class="chip bg-color">CV</span>
                     </a>
                     
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
+                    <a href="/tags/object-detection/">
+                        <span class="chip bg-color">object detection</span>
                     </a>
                     
                 </div>
