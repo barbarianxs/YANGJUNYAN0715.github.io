@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-07-15T10:23:49.566Z</updated>
+  <updated>2022-07-18T09:02:34.616Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何在页面上实现一个圆形的可点击区域？</title>
+    <link href="https://yangjunyan0715.github.io/2022/07/18/ru-he-zai-ye-mian-shang-shi-xian-yi-ge-yuan-xing-de-ke-dian-ji-qu-yu/"/>
+    <id>https://yangjunyan0715.github.io/2022/07/18/ru-he-zai-ye-mian-shang-shi-xian-yi-ge-yuan-xing-de-ke-dian-ji-qu-yu/</id>
+    <published>2022-07-18T08:59:25.000Z</published>
+    <updated>2022-07-18T09:02:34.616Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;有多种方式可以实现，以下列举两种方式&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;border-radius&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;line-numbers language-markup&quot; data-language=&quot;markup&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    
+    <category term="front-end" scheme="https://yangjunyan0715.github.io/tags/front-end/"/>
+    
+  </entry>
   
   <entry>
     <title>一段有意思的话</title>
