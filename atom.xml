@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-07-19T05:10:59.269Z</updated>
+  <updated>2022-07-23T12:34:43.363Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue中v-model双向绑定原理</title>
+    <link href="https://yangjunyan0715.github.io/2022/07/23/vue-zhong-v-model-shuang-xiang-bang-ding-yuan-li/"/>
+    <id>https://yangjunyan0715.github.io/2022/07/23/vue-zhong-v-model-shuang-xiang-bang-ding-yuan-li/</id>
+    <published>2022-07-23T12:33:44.000Z</published>
+    <updated>2022-07-23T12:34:43.363Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre class=&quot;line-numbers language-markup&quot; data-language=&quot;markup&quot;&gt;&lt;code class=&quot;language-markup&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    
+    <category term="front-end" scheme="https://yangjunyan0715.github.io/tags/front-end/"/>
+    
+    <category term="Vue" scheme="https://yangjunyan0715.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>JS手写深拷贝</title>
