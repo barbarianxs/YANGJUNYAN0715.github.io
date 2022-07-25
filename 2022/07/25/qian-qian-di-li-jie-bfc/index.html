@@ -422,7 +422,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    59
+                    102
                 </div>
                 
 
@@ -471,8 +471,10 @@
     </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<p>未使用BFC之前，子元素添加了浮动，脱离了文档流</p>
 <img src="/2022/07/25/qian-qian-di-li-jie-bfc/image1.png" class="">
 
+<p>使用BFC之后，通过overflow:hidden触发浮动，使得父容器包裹子容器</p>
 <img src="/2022/07/25/qian-qian-di-li-jie-bfc/image2.png" class="">
 
                 
