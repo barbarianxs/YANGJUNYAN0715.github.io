@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-07-25T06:18:40.040Z</updated>
+  <updated>2022-07-25T13:21:02.547Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>云图</title>
+    <link href="https://yangjunyan0715.github.io/2022/07/25/yun-tu/"/>
+    <id>https://yangjunyan0715.github.io/2022/07/25/yun-tu/</id>
+    <published>2022-07-25T12:52:47.000Z</published>
+    <updated>2022-07-25T13:21:02.547Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这应该是第二次看这部影片，第一次什么时候看的已经忘得一干二净了，所以只是模模糊糊地记得片名和“这部影片很特别”的印象（六个故事不断切换视觉和心理的冲击太大了）。第一次看估计是没看懂，所以不怎么记得情节了。&lt;/p&gt;
+&lt;p&gt;影片最大的特点就是串起了不同空间和时间维度的六个故事，</summary>
+        
+      
+    
+    
+    
+    
+    <category term="movie" scheme="https://yangjunyan0715.github.io/tags/movie/"/>
+    
+  </entry>
   
   <entry>
     <title>浅浅地理解BFC</title>
