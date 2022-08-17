@@ -503,8 +503,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                今天面试被问了vue生命周期的问题，有一个问题是在created阶段，如何操作dom元素，因为在created阶段dom还没有被渲染，这里就需要用的nextTick回调函数。
-vue的异步更新策略是，在数据发生变化的时候，vue不会立刻更新
+                                今天面试被问了vue生命周期的问题，有一个问题是，在created阶段，如何操作dom元素？因为在created阶段dom还没有被渲染。vue的异步更新策略是，在数据发生变化的时候，vue不会立刻更新dom，而是会开启一个队列，把组件更新函
                             
                         </div>
                         <div class="publish-info">
