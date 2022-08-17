@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Vue生命周期, barbarianxs&#39; blog">
+    <meta name="keywords" content="Vue-nextTick回调函数, barbarianxs&#39; blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Vue生命周期 | barbarianxs&#39; blog</title>
+    <title>Vue-nextTick回调函数 | barbarianxs&#39; blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -267,12 +267,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Vue生命周期</h1>
+                    <h1 class="description center-align post-title">Vue-nextTick回调函数</h1>
                 </div>
             </div>
         </div>
@@ -422,7 +422,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    68
+                    225
                 </div>
                 
 
@@ -452,12 +452,21 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>今天面试被问了Vue生命周期的问题，有一个问题是在mounted阶段，如何获取dom元素，因为正常来说dom元素只有在created阶段才能被获取。</p>
-<img src="/2022/08/17/vue-sheng-ming-zhou-qi/img_1.png" class="">
+                <p>今天面试被问了vue生命周期的问题，有一个问题是在created阶段，如何操作dom元素，因为在created阶段dom还没有被渲染，这里就需要用的nextTick回调函数。</p>
+<p>vue的异步更新策略是，在数据发生变化的时候，vue不会立刻更新dom，而是会开启一个队列，把组件更新函数保存在队列中，使用this.$nextTick()回调函数就是处理dom异步更新的，在渲染dom之后，会自动执行回调函数。项目中就是希望页面展示的值是随数据改变啊而改变，而非之前的值时候就可以使用nextTick()。</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">methods：<span class="token punctuation">&#123;</span>
+    <span class="token function">testClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>content <span class="token operator">=</span> <span class="token string">'改变了的值'</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+            <span class="token comment">// dom元素更新后执行，因此这里能正确打印更改之后的值</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>tar<span class="token punctuation">.</span>innerText<span class="token punctuation">)</span> <span class="token comment">// 改变了的值</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<img src="/2022/08/17/vue-sheng-ming-zhou-qi/img_2.png" class="">
 
-<p>Vue生命周期简单来说就是分成八个阶段，</p>
+
 
                 
             </div>
@@ -484,7 +493,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yangjunyan0715.github.io/2022/08/17/vue-sheng-ming-zhou-qi/">https://yangjunyan0715.github.io/2022/08/17/vue-sheng-ming-zhou-qi/</a>
+                    <a href="https://yangjunyan0715.github.io/2022/08/17/vue-nexttick-hui-diao-han-shu/">https://yangjunyan0715.github.io/2022/08/17/vue-nexttick-hui-diao-han-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -965,13 +974,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/08/17/vue-sheng-ming-zhou-qi/">
+                <a href="/2022/08/17/vue-nexttick-hui-diao-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Vue生命周期">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Vue-nextTick回调函数">
                         
-                        <span class="card-title">Vue生命周期</span>
+                        <span class="card-title">Vue-nextTick回调函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
