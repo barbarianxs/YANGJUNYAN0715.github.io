@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-08-17T14:09:03.998Z</updated>
+  <updated>2022-08-22T13:13:36.104Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小心某些VSCode插件</title>
+    <link href="https://yangjunyan0715.github.io/2022/08/22/xiao-xin-mou-xie-vscode-cha-jian/"/>
+    <id>https://yangjunyan0715.github.io/2022/08/22/xiao-xin-mou-xie-vscode-cha-jian/</id>
+    <published>2022-08-22T13:08:03.000Z</published>
+    <updated>2022-08-22T13:13:36.104Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天用vite初始化vue项目完了以后，用VSCode打开居然在import项目自带的Helloworld组件下面爆了一个小红线，想了老半天都没想明白啥原因，后来突然意识到可能是插件的问题，果不其然，报错提示是”Vetur“，只能暂时先禁用了&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+    <category term="front-end" scheme="https://yangjunyan0715.github.io/tags/front-end/"/>
+    
+    <category term="Vue" scheme="https://yangjunyan0715.github.io/tags/Vue/"/>
+    
+    <category term="VSCode" scheme="https://yangjunyan0715.github.io/tags/VSCode/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue-nextTick回调函数</title>
