@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-08-22T13:13:36.104Z</updated>
+  <updated>2022-08-30T12:25:53.181Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -17,18 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法</title>
+    <link href="https://yangjunyan0715.github.io/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/"/>
+    <id>https://yangjunyan0715.github.io/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/</id>
+    <published>2022-08-30T12:11:17.000Z</published>
+    <updated>2022-08-30T12:25:53.181Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在用ninja编译完一个程序以后发现磁盘容量不够了，把虚拟机从60G扩容到了105G，但重启之后，出现了’Started User Manager for UID 121’，一开始以为等一会就能正常进入系统，后来一直卡在这里，&lt;/p&gt;
+&lt;img</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Ubuntu" scheme="https://yangjunyan0715.github.io/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小心某些VSCode插件</title>
     <link href="https://yangjunyan0715.github.io/2022/08/22/xiao-xin-mou-xie-vscode-cha-jian/"/>
     <id>https://yangjunyan0715.github.io/2022/08/22/xiao-xin-mou-xie-vscode-cha-jian/</id>
     <published>2022-08-22T13:08:03.000Z</published>
-    <updated>2022-08-22T13:13:36.104Z</updated>
+    <updated>2022-08-22T13:16:17.791Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;今天用vite初始化vue项目完了以后，用VSCode打开居然在import项目自带的Helloworld组件下面爆了一个小红线，想了老半天都没想明白啥原因，后来突然意识到可能是插件的问题，果不其然，报错提示是”Vetur“，只能暂时先禁用了&lt;/p&gt;
+    <summary type="html">&lt;p&gt;今天用vite初始化vue项目完了以后，用VSCode打开居然在import项目自带的Helloworld组件下面爆了一个小红线，想了老半天都没想明白啥原因，后来突然意识到可能是插件的问题，果不其然，报错提示是”Vetur“。&lt;/p&gt;
 </summary>
         
       

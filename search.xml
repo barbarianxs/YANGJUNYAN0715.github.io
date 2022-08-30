@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法</title>
+      <link href="/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/"/>
+      <url>/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/</url>
+      
+        <content type="html"><![CDATA[<p>在用ninja编译完一个程序以后发现磁盘容量不够了，把虚拟机从60G扩容到了105G，但重启之后，出现了’Started User Manager for UID 121’，一开始以为等一会就能正常进入系统，后来一直卡在这里，</p><img src="/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/img1.png" class=""><p>首先出现这个问题大概率是磁盘容量不够了，先是通过Ctrl+Alt+F2进入tty2模式，输入用户名密码之后就会出现终端，在这里终端就可以像虚拟机一样正常操作了。</p><p>输入df -h可以查看磁盘使用情况，果不其然100%满了，找到导致磁盘爆满的文件rm -rf xxx删除（如果是重要文件请不要删），然后reboot启动就能恢复正常了。</p><p>正常进入系统以后，选择磁盘工具，对未被分区的部分进行扩容，结束。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小心某些VSCode插件</title>
       <link href="/2022/08/22/xiao-xin-mou-xie-vscode-cha-jian/"/>
       <url>/2022/08/22/xiao-xin-mou-xie-vscode-cha-jian/</url>
       
-        <content type="html"><![CDATA[<p>今天用vite初始化vue项目完了以后，用VSCode打开居然在import项目自带的Helloworld组件下面爆了一个小红线，想了老半天都没想明白啥原因，后来突然意识到可能是插件的问题，果不其然，报错提示是”Vetur“，只能暂时先禁用了</p>]]></content>
+        <content type="html"><![CDATA[<p>今天用vite初始化vue项目完了以后，用VSCode打开居然在import项目自带的Helloworld组件下面爆了一个小红线，想了老半天都没想明白啥原因，后来突然意识到可能是插件的问题，果不其然，报错提示是”Vetur“。</p>]]></content>
       
       
       
