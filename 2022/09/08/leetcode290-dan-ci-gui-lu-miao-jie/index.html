@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法, barbarianxs&#39; blog">
+    <meta name="keywords" content="leetcode290 单词规律秒解, barbarianxs&#39; blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法 | barbarianxs&#39; blog</title>
+    <title>leetcode290 单词规律秒解 | barbarianxs&#39; blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -267,12 +267,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法</h1>
+                    <h1 class="description center-align post-title">leetcode290 单词规律秒解</h1>
                 </div>
             </div>
         </div>
@@ -388,8 +388,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Ubuntu/">
-                                <span class="chip bg-color">Ubuntu</span>
+                            <a href="/tags/leetcode/">
+                                <span class="chip bg-color">leetcode</span>
                             </a>
                         
                     </div>
@@ -404,21 +404,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-30
+                    2022-09-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-08-30
+                    2022-09-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    221
+                    320
                 </div>
                 
 
@@ -448,13 +448,37 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>在用ninja编译完一个程序以后发现磁盘容量不够了，把虚拟机从60G扩容到了105G，但重启之后，出现了’Started User Manager for UID 121’，一开始以为等一会就能正常进入系统，后来一直卡在这里，</p>
-<img src="/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/img1.png" class="">
+                <h4 id="原题-leetcode290-单词规律"><a href="#原题-leetcode290-单词规律" class="headerlink" title="原题 leetcode290 单词规律"></a>原题 leetcode290 单词规律</h4><p>给定一种规律 pattern 和一个字符串 s ，判断 s 是否遵循相同的规律。</p>
+<p>这里的 遵循 指完全匹配，例如， pattern 里的每个字母和字符串 s 中的每个非空单词之间存在着双向连接的对应规律。</p>
+<pre class="line-numbers language-none"><code class="language-none">示例1:
 
-<p>首先出现这个问题大概率是磁盘容量不够了，先是通过Ctrl+Alt+F2进入tty2模式，输入用户名密码之后就会出现终端，在这里终端就可以像虚拟机一样正常操作了。</p>
-<p>输入df -h可以查看磁盘使用情况，果不其然100%满了，找到导致磁盘爆满的文件rm -rf xxx删除（如果是重要文件请不要删），然后reboot启动就能恢复正常了。</p>
-<p>正常进入系统以后，选择磁盘工具，对未被分区的部分进行扩容，结束。</p>
-<img src="/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/img2.png" class="">
+输入: pattern &#x3D; &quot;abba&quot;, s &#x3D; &quot;dog cat cat dog&quot;
+输出: true
+示例 2:
+
+输入:pattern &#x3D; &quot;abba&quot;, s &#x3D; &quot;dog cat cat fish&quot;
+输出: false
+示例 3:
+
+输入: pattern &#x3D; &quot;aaaa&quot;, s &#x3D; &quot;dog cat cat dog&quot;
+输出: false
+s
+来源：力扣（LeetCode）
+链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;word-pattern
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> <span class="token function-variable function">wordPattern</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">pattern<span class="token punctuation">,</span> s</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> str <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>str<span class="token punctuation">.</span>length <span class="token operator">!==</span> pattern<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> pattern<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>pattern<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>pattern<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">!==</span> str<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这里用了一种前后匹配的方式，如果pattern以及s（两者反正应该是一一对应的）里面有一个字符（在s中是单词）出现了两次或者两次以上，那么，第一次之后的出现时，使用IndexOf找到第一次出现的index在pattern和s中应该是一样的。</p>
 
                 
             </div>
@@ -481,7 +505,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yangjunyan0715.github.io/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/">https://yangjunyan0715.github.io/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/</a>
+                    <a href="https://yangjunyan0715.github.io/2022/09/08/leetcode290-dan-ci-gui-lu-miao-jie/">https://yangjunyan0715.github.io/2022/09/08/leetcode290-dan-ci-gui-lu-miao-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -519,8 +543,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Ubuntu/">
-                                    <span class="chip bg-color">Ubuntu</span>
+                                <a href="/tags/leetcode/">
+                                    <span class="chip bg-color">leetcode</span>
                                 </a>
                             
                         </div>
@@ -953,9 +977,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/09/08/leetcode290-dan-ci-gui-lu-miao-jie/">
                     <div class="card-image">
@@ -973,9 +998,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -984,6 +1009,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1002,13 +1028,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/22/xiao-xin-mou-xie-vscode-cha-jian/">
+                <a href="/2022/08/30/ubuntu-chu-xian-started-user-manager-for-uid-121-wen-ti-ji-jie-jue-ban-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="小心某些VSCode插件">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法">
                         
-                        <span class="card-title">小心某些VSCode插件</span>
+                        <span class="card-title">Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1019,7 +1045,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-30
                             </span>
                         <span class="publish-author">
                             
@@ -1032,16 +1058,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/front-end/">
-                        <span class="chip bg-color">front-end</span>
-                    </a>
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
-                    </a>
-                    
-                    <a href="/tags/VSCode/">
-                        <span class="chip bg-color">VSCode</span>
+                    <a href="/tags/Ubuntu/">
+                        <span class="chip bg-color">Ubuntu</span>
                     </a>
                     
                 </div>

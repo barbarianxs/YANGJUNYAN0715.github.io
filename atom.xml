@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-08-30T12:30:41.291Z</updated>
+  <updated>2022-09-08T15:20:41.380Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode290 单词规律秒解</title>
+    <link href="https://yangjunyan0715.github.io/2022/09/08/leetcode290-dan-ci-gui-lu-miao-jie/"/>
+    <id>https://yangjunyan0715.github.io/2022/09/08/leetcode290-dan-ci-gui-lu-miao-jie/</id>
+    <published>2022-09-08T15:13:25.000Z</published>
+    <updated>2022-09-08T15:20:41.380Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;原题-leetcode290-单词规律&quot;&gt;&lt;a href=&quot;#原题-leetcode290-单词规律&quot; class=&quot;headerlink&quot; title=&quot;原题 leetcode290 单词规律&quot;&gt;&lt;/a&gt;原题 leetcode290</summary>
+        
+      
+    
+    
+    
+    
+    <category term="leetcode" scheme="https://yangjunyan0715.github.io/tags/leetcode/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubuntu出现&#39;Started User Manager for UID 121&#39;问题及解决办法</title>
