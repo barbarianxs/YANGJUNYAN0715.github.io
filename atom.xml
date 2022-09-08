@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-09-08T15:22:17.788Z</updated>
+  <updated>2022-09-08T15:32:58.462Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决github上传以后README.md文件中图片无法加载问题</title>
+    <link href="https://yangjunyan0715.github.io/2022/09/08/jie-jue-github-shang-chuan-yi-hou-readme-md-wen-jian-zhong-tu-pian-wu-fa-jia-zai-wen-ti/"/>
+    <id>https://yangjunyan0715.github.io/2022/09/08/jie-jue-github-shang-chuan-yi-hou-readme-md-wen-jian-zhong-tu-pian-wu-fa-jia-zai-wen-ti/</id>
+    <published>2022-09-08T15:25:20.000Z</published>
+    <updated>2022-09-08T15:32:58.462Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;发现github上传之后README.md文件中图片无法加载，查了资料以后发现，github上传的文件都默认保存在 githubusercontent.com 这个网页下，先通过 &lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="github" scheme="https://yangjunyan0715.github.io/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode290 单词规律秒解</title>
