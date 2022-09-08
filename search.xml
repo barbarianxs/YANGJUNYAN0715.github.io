@@ -8,7 +8,7 @@
       <link href="/2022/09/08/jie-jue-github-shang-chuan-yi-hou-readme-md-wen-jian-zhong-tu-pian-wu-fa-jia-zai-wen-ti/"/>
       <url>/2022/09/08/jie-jue-github-shang-chuan-yi-hou-readme-md-wen-jian-zhong-tu-pian-wu-fa-jia-zai-wen-ti/</url>
       
-        <content type="html"><![CDATA[<p>发现github上传之后README.md文件中图片无法加载，查了资料以后发现，github上传的文件都默认保存在 githubusercontent.com 这个网页下，先通过 <a href="https://www.ipaddress.com/">https://www.ipaddress.com</a> 查询到 githubusercontent.com 对应的ip地址，修改本机hosts (windows的hosts文件目录 C:\Windows\System32\drivers\etc\hosts）文件，增加头像域名和正确ip映射关系并保存，cmd命令ipconfig &#x2F;flushdns刷新缓存，再进入github发现图片还是不能正常加载，这时候问题可能是没开启vpn，所以想要体验感好，最好还是开启vpn。</p>]]></content>
+        <content type="html"><![CDATA[<p>发现github上传之后README.md文件中图片无法加载，查了资料以后发现，github上传的文件都默认保存在 githubusercontent.com 这个网页下。</p><ol><li><p>先通过 <a href="https://www.ipaddress.com/">https://www.ipaddress.com</a> 查询到 githubusercontent.com 对应的ip地址。</p></li><li><p>修改本机hosts (windows的hosts文件目录 C:\Windows\System32\drivers\etc\hosts）文件，增加域名和正确ip映射关系并保存。</p></li><li><p>cmd命令ipconfig &#x2F;flushdns刷新缓存。</p></li><li><p>再进入github如果发现还是不能正常加载，可能是没开启vpn，开启vpn，正常加载，over。</p></li></ol>]]></content>
       
       
       
