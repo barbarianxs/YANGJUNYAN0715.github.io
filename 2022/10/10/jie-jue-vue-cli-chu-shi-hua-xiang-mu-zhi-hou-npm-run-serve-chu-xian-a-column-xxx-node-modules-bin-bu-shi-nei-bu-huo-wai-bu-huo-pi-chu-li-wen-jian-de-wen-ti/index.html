@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="leetcode707 设计链表, barbarianxs&#39; blog">
+    <meta name="keywords" content="解决vue-cli初始化项目之后 &#39;npm run serve&#39; 出现 &#39;A_Column\xxx\node_modules\.bin\&#39; 不是内部或外部或批处理文件。&#39; 的问题, barbarianxs&#39; blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>leetcode707 设计链表 | barbarianxs&#39; blog</title>
+    <title>解决vue-cli初始化项目之后 &#39;npm run serve&#39; 出现 &#39;A_Column\xxx\node_modules\.bin\&#39; 不是内部或外部或批处理文件。&#39; 的问题 | barbarianxs&#39; blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -267,12 +267,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">leetcode707 设计链表</h1>
+                    <h1 class="description center-align post-title">解决vue-cli初始化项目之后 &#39;npm run serve&#39; 出现 &#39;A_Column\xxx\node_modules\.bin\&#39; 不是内部或外部或批处理文件。&#39; 的问题</h1>
                 </div>
             </div>
         </div>
@@ -388,8 +388,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/leetcode/">
-                                <span class="chip bg-color">leetcode</span>
+                            <a href="/tags/Vue/">
+                                <span class="chip bg-color">Vue</span>
                             </a>
                         
                     </div>
@@ -404,28 +404,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-24
+                    2022-10-10
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-24
+                    2022-10-10
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    660
+                    159
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -448,108 +448,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="707-设计链表"><a href="#707-设计链表" class="headerlink" title="707. 设计链表"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/design-linked-list/">707. 设计链表</a></h4><p>设计链表的实现。您可以选择使用单链表或双链表。单链表中的节点应该具有两个属性：val 和 next。val 是当前节点的值，next 是指向下一个节点的指针&#x2F;引用。如果要使用双向链表，则还需要一个属性 prev 以指示链表中的上一个节点。假设链表中的所有节点都是 0-index 的。</p>
-<p>在链表类中实现这些功能：</p>
-<p>get(index)：获取链表中第 index 个节点的值。如果索引无效，则返回-1。<br>addAtHead(val)：在链表的第一个元素之前添加一个值为 val 的节点。插入后，新节点将成为链表的第一个节点。<br>addAtTail(val)：将值为 val 的节点追加到链表的最后一个元素。<br>addAtIndex(index,val)：在链表中的第 index 个节点之前添加值为 val  的节点。如果 index 等于链表的长度，则该节点将附加到链表的末尾。如果 index 大于链表长度，则不会插入节点。如果index小于0，则在头部插入节点。</p>
-<pre class="line-numbers language-none"><code class="language-none">deleteAtIndex(index)：如果索引 index 有效，则删除链表中的第 index 个节点。
+                <p>今天用vue-cli初始化了一个vue-ts项目，但用vscode打开以后，运行”npm run serve”出现了如标题中所示的错误，综合他人的解决方法，只需替换node_modules.bin\vue-cli-service.cmd文件内容，原内容为</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">@ECHO off
+GOTO start
+:find_dp0
+SET <span class="token assign-left variable">dp0</span><span class="token operator">=</span>%~dp0
+EXIT /b
+:start
+SETLOCAL
+CALL :find_dp0
 
-MyLinkedList linkedList &#x3D; new MyLinkedList();
-linkedList.addAtHead(1);
-linkedList.addAtTail(3);
-linkedList.addAtIndex(1,2);   &#x2F;&#x2F;链表变为1-&gt; 2-&gt; 3
-linkedList.get(1);            &#x2F;&#x2F;返回2
-linkedList.deleteAtIndex(1);  &#x2F;&#x2F;现在链表是1-&gt; 3
-linkedList.get(1);            &#x2F;&#x2F;返回3
+IF EXIST <span class="token string">"%dp0%<span class="token entity" title="\n">\n</span>ode.exe"</span> <span class="token punctuation">(</span>
+  SET <span class="token string">"_prog=%dp0%<span class="token entity" title="\n">\n</span>ode.exe"</span>
+<span class="token punctuation">)</span> ELSE <span class="token punctuation">(</span>
+  SET <span class="token string">"_prog=node"</span>
+  SET <span class="token assign-left variable">PATHEXT</span><span class="token operator">=</span>%PATHEXT:<span class="token punctuation">;</span>.JS<span class="token punctuation">;</span><span class="token operator">=</span><span class="token punctuation">;</span>%
+<span class="token punctuation">)</span>
 
-来源：力扣（LeetCode）
-链接：https:&#x2F;&#x2F;leetcode.cn&#x2F;problems&#x2F;design-linked-list
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+endLocal <span class="token operator">&amp;</span> goto <span class="token comment">#_undefined_# 2>NUL || title %COMSPEC% &amp; "%_prog%"  "%dp0%\..\@vue\cli-service\bin\vue-cli-service.js" %*</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">ListNode</span><span class="token punctuation">(</span><span class="token parameter">val<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>val <span class="token operator">=</span> val <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> val<span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>next <span class="token operator">=</span> next <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token operator">?</span> <span class="token keyword">null</span> <span class="token operator">:</span> next<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span>
-<span class="token keyword">var</span> <span class="token function-variable function">MyLinkedList</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>size <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>head <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<p>替换为下面的内容</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">@IF EXIST <span class="token string">"%~dp0<span class="token entity" title="\n">\n</span>ode.exe"</span> <span class="token punctuation">(</span>
+  <span class="token string">"%~dp0<span class="token entity" title="\n">\n</span>ode.exe"</span>  <span class="token string">"%~dp0\..\@vue<span class="token entity" title="\c">\c</span>li-service<span class="token entity" title="\b">\b</span>in<span class="token entity" title="\v">\v</span>ue-cli-service.js"</span> %*
+<span class="token punctuation">)</span> ELSE <span class="token punctuation">(</span>
+  @SETLOCAL
+  @SET <span class="token assign-left variable">PATHEXT</span><span class="token operator">=</span>%PATHEXT:<span class="token punctuation">;</span>.JS<span class="token punctuation">;</span><span class="token operator">=</span><span class="token punctuation">;</span>%
+  <span class="token function">node</span>  <span class="token string">"%~dp0\..\@vue<span class="token entity" title="\c">\c</span>li-service<span class="token entity" title="\b">\b</span>in<span class="token entity" title="\v">\v</span>ue-cli-service.js"</span> %*
+<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<span class="token comment">/** 
- * @param &#123;number&#125; index
- * @return &#123;number&#125;
- */</span>
-<span class="token class-name">MyLinkedList</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">get</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>head<span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>index<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>index<span class="token operator">></span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>index<span class="token operator">!==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        temp <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-        index<span class="token operator">--</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token keyword">return</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">.</span>val<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-
-<span class="token comment">/** 
- * @param &#123;number&#125; val
- * @return &#123;void&#125;
- */</span>
-<span class="token class-name">MyLinkedList</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">addAtHead</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">addAtIndex</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-
-<span class="token comment">/** 
- * @param &#123;number&#125; val
- * @return &#123;void&#125;
- */</span>
-<span class="token class-name">MyLinkedList</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">addAtTail</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">addAtIndex</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-
-<span class="token comment">/** 
- * @param &#123;number&#125; index 
- * @param &#123;number&#125; val
- * @return &#123;void&#125;
- */</span>
-<span class="token class-name">MyLinkedList</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">addAtIndex</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>index<span class="token operator">></span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>size <span class="token operator">++</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>index<span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">let</span> newNode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        newNode<span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>head<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>head<span class="token punctuation">.</span>next <span class="token operator">=</span> newNode<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span><span class="token keyword">else</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>head<span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span>index<span class="token operator">!==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            temp <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-            index<span class="token operator">--</span><span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span>
-        <span class="token keyword">let</span> newNode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        newNode<span class="token punctuation">.</span>next <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-        temp<span class="token punctuation">.</span>next <span class="token operator">=</span> newNode<span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
-
-<span class="token comment">/** 
- * @param &#123;number&#125; index
- * @return &#123;void&#125;
- */</span>
-<span class="token class-name">MyLinkedList</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">deleteAtIndex</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>index<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>index<span class="token operator">></span><span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    <span class="token keyword">let</span> temp <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>head<span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>index<span class="token operator">!==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        temp <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-        index<span class="token operator">--</span><span class="token punctuation">;</span>
-    <span class="token punctuation">&#125;</span>
-    temp<span class="token punctuation">.</span>next <span class="token operator">=</span> temp<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>size<span class="token operator">--</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>对链表的理解加深了捏😋</p>
+<p>成功！</p>
 
                 
             </div>
@@ -576,7 +504,7 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://yangjunyan0715.github.io/2022/09/24/leetcode707-she-ji-lian-biao/">https://yangjunyan0715.github.io/2022/09/24/leetcode707-she-ji-lian-biao/</a>
+                    <a href="https://yangjunyan0715.github.io/2022/10/10/jie-jue-vue-cli-chu-shi-hua-xiang-mu-zhi-hou-npm-run-serve-chu-xian-a-column-xxx-node-modules-bin-bu-shi-nei-bu-huo-wai-bu-huo-pi-chu-li-wen-jian-de-wen-ti/">https://yangjunyan0715.github.io/2022/10/10/jie-jue-vue-cli-chu-shi-hua-xiang-mu-zhi-hou-npm-run-serve-chu-xian-a-column-xxx-node-modules-bin-bu-shi-nei-bu-huo-wai-bu-huo-pi-chu-li-wen-jian-de-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -614,8 +542,8 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/leetcode/">
-                                    <span class="chip bg-color">leetcode</span>
+                                <a href="/tags/Vue/">
+                                    <span class="chip bg-color">Vue</span>
                                 </a>
                             
                         </div>
@@ -1048,9 +976,10 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/10/10/jie-jue-vue-cli-chu-shi-hua-xiang-mu-zhi-hou-npm-run-serve-chu-xian-a-column-xxx-node-modules-bin-bu-shi-nei-bu-huo-wai-bu-huo-pi-chu-li-wen-jian-de-wen-ti/">
                     <div class="card-image">
@@ -1068,9 +997,9 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-10
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1079,6 +1008,7 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1097,13 +1027,13 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/08/jie-jue-github-shang-chuan-yi-hou-readme-md-wen-jian-zhong-tu-pian-wu-fa-jia-zai-wen-ti/">
+                <a href="/2022/09/24/leetcode707-she-ji-lian-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="解决github上传以后README.md文件中图片无法加载问题">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="leetcode707 设计链表">
                         
-                        <span class="card-title">解决github上传以后README.md文件中图片无法加载问题</span>
+                        <span class="card-title">leetcode707 设计链表</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1114,7 +1044,7 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-24
                             </span>
                         <span class="publish-author">
                             
@@ -1127,8 +1057,8 @@ linkedList.get(1);            &#x2F;&#x2F;返回3
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/github/">
-                        <span class="chip bg-color">github</span>
+                    <a href="/tags/leetcode/">
+                        <span class="chip bg-color">leetcode</span>
                     </a>
                     
                 </div>
