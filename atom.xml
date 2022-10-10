@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-10-10T14:37:34.648Z</updated>
+  <updated>2022-10-10T14:39:48.965Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>解决vue-cli初始化项目之后 &#39;npm run serve&#39; 出现 &#39;A_Column\xxx\node_modules\.bin\&#39; 不是内部或外部或批处理文件。&#39; 的问题</title>
-    <link href="https://yangjunyan0715.github.io/2022/10/10/jie-jue-vue-cli-chu-shi-hua-xiang-mu-zhi-hou-npm-run-serve-chu-xian-a-column-xxx-node-modules-bin-bu-shi-nei-bu-huo-wai-bu-huo-pi-chu-li-wen-jian-de-wen-ti/"/>
-    <id>https://yangjunyan0715.github.io/2022/10/10/jie-jue-vue-cli-chu-shi-hua-xiang-mu-zhi-hou-npm-run-serve-chu-xian-a-column-xxx-node-modules-bin-bu-shi-nei-bu-huo-wai-bu-huo-pi-chu-li-wen-jian-de-wen-ti/</id>
+    <title>解决vue-cli初始化项目之后执行 &#39;npm run serve&#39; 命令出现 &#39;A_Column\xxx\node_modules\.bin\&#39; 不是内部或外部或批处理文件。&#39; 的问题</title>
+    <link href="https://yangjunyan0715.github.io/2022/10/10/jie-jue-vue-cli-chu-shi-hua-xiang-mu-zhi-hou-zhi-xing-npm-run-serve-ming-ling-chu-xian-a-column-xxx-node-modules-bin-bu-shi-nei-bu-huo-wai-bu-huo-pi-chu-li-wen-jian-de-wen-ti/"/>
+    <id>https://yangjunyan0715.github.io/2022/10/10/jie-jue-vue-cli-chu-shi-hua-xiang-mu-zhi-hou-zhi-xing-npm-run-serve-ming-ling-chu-xian-a-column-xxx-node-modules-bin-bu-shi-nei-bu-huo-wai-bu-huo-pi-chu-li-wen-jian-de-wen-ti/</id>
     <published>2022-10-10T14:31:30.000Z</published>
-    <updated>2022-10-10T14:37:34.648Z</updated>
+    <updated>2022-10-10T14:39:48.965Z</updated>
     
     
       
