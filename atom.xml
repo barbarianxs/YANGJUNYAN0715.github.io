@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-10-10T14:47:03.637Z</updated>
+  <updated>2022-10-13T09:22:46.861Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>初识typescript</title>
+    <link href="https://yangjunyan0715.github.io/2022/10/13/chu-shi-typescript/"/>
+    <id>https://yangjunyan0715.github.io/2022/10/13/chu-shi-typescript/</id>
+    <published>2022-10-13T09:05:11.000Z</published>
+    <updated>2022-10-13T09:22:46.861Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;最近因为项目的原因接触了typescript，感觉是一门很有意思的语言，typescript是微软主导开发的一款编程语言，在javascript的基础上拓展而成的，因此完全兼容js。&lt;/p&gt;
+&lt;p&gt;想从个人使用的经历谈谈这门语言，ts和js最大的区别就是，js是动态类型语言</summary>
+        
+      
+    
+    
+    
+    
+    <category term="typescript" scheme="https://yangjunyan0715.github.io/tags/typescript/"/>
+    
+  </entry>
   
   <entry>
     <title>解决vue-cli初始化项目之后执行 &#39;npm run serve&#39; 命令出现 &#39;A_Column\xxx\node_modules\.bin\&#39; 不是内部或外部或批处理文件。&#39; 的问题</title>
@@ -491,30 +515,6 @@
     <category term="front-end" scheme="https://yangjunyan0715.github.io/tags/front-end/"/>
     
     <category term="css" scheme="https://yangjunyan0715.github.io/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git rebase 和 git merge 的区别</title>
-    <link href="https://yangjunyan0715.github.io/2022/06/18/git-rebase-he-git-merge-de-qu-bie/"/>
-    <id>https://yangjunyan0715.github.io/2022/06/18/git-rebase-he-git-merge-de-qu-bie/</id>
-    <published>2022-06-18T13:39:50.000Z</published>
-    <updated>2022-06-18T13:42:22.859Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;git merge 和 git rebase 都是用于分支合并，关键在 commit 记录的处理上不同。&lt;/p&gt;
-&lt;p&gt;git merge 会新建一个新的 commit 对象，然后两个分支以前的 commit 记录都指向这个新 commit</summary>
-        
-      
-    
-    
-    
-    
-    <category term="git" scheme="https://yangjunyan0715.github.io/tags/git/"/>
     
   </entry>
   
