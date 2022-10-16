@@ -6,7 +6,7 @@
   <link href="https://yangjunyan0715.github.io/atom.xml" rel="self"/>
   
   <link href="https://yangjunyan0715.github.io/"/>
-  <updated>2022-10-13T09:24:23.034Z</updated>
+  <updated>2022-10-16T07:09:31.635Z</updated>
   <id>https://yangjunyan0715.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue3项目&#39;npm install element-ui -S&#39;报错</title>
+    <link href="https://yangjunyan0715.github.io/2022/10/16/vue3-xiang-mu-npm-install-element-ui-s-bao-cuo/"/>
+    <id>https://yangjunyan0715.github.io/2022/10/16/vue3-xiang-mu-npm-install-element-ui-s-bao-cuo/</id>
+    <published>2022-10-16T06:49:09.000Z</published>
+    <updated>2022-10-16T07:09:31.635Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天安装element-ui时候报错了，很奇怪&lt;/p&gt;
+&lt;img src=&quot;/2022/10/16/vue3-xiang-mu-npm-install-element-ui-s-bao-cuo/img1.png&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Vue" scheme="https://yangjunyan0715.github.io/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>初识typescript</title>
@@ -490,31 +514,6 @@
     
     
     <category term="reading notes" scheme="https://yangjunyan0715.github.io/tags/reading-notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何用css实现一个三角形</title>
-    <link href="https://yangjunyan0715.github.io/2022/06/19/ru-he-yong-css-shi-xian-yi-ge-san-jiao-xing/"/>
-    <id>https://yangjunyan0715.github.io/2022/06/19/ru-he-yong-css-shi-xian-yi-ge-san-jiao-xing/</id>
-    <published>2022-06-19T09:49:50.000Z</published>
-    <updated>2022-06-19T10:07:25.660Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;pre class=&quot;line-numbers language-markup&quot; data-language=&quot;markup&quot;&gt;&lt;code class=&quot;language-markup&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token</summary>
-        
-      
-    
-    
-    
-    
-    <category term="front-end" scheme="https://yangjunyan0715.github.io/tags/front-end/"/>
-    
-    <category term="css" scheme="https://yangjunyan0715.github.io/tags/css/"/>
     
   </entry>
   

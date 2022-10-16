@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Vue3项目&#39;npm install element-ui -S&#39;报错</title>
+      <link href="/2022/10/16/vue3-xiang-mu-npm-install-element-ui-s-bao-cuo/"/>
+      <url>/2022/10/16/vue3-xiang-mu-npm-install-element-ui-s-bao-cuo/</url>
+      
+        <content type="html"><![CDATA[<p>今天安装element-ui时候报错了，很奇怪</p><img src="/2022/10/16/vue3-xiang-mu-npm-install-element-ui-s-bao-cuo/img1.png" class=""><p>查了资料，如果是vue3项目，应使用</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --legacy-peer-deps element-ui --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>成功！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>初识typescript</title>
       <link href="/2022/10/13/chu-shi-typescript/"/>
       <url>/2022/10/13/chu-shi-typescript/</url>
